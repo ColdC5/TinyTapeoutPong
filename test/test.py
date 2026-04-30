@@ -8,8 +8,8 @@ import itertools
 import queue
 from PIL import Image
 from pygame.key import ScancodeWrapper
-from test.constants import *
-from test.dut_types import DUT
+from constants import *
+from dut_types import DUT
 
 PALETTE = [bytes(3)] * 256
 for r1, r0, g1, g0, b1, b0 in itertools.product(range(2), repeat=6):
