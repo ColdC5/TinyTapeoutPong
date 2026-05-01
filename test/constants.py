@@ -1,6 +1,7 @@
 DEBUG = False
 SCALE = 10
 MAX_FPS = 60
+IS_HUMAN_TEST = False
 
 # Set clock period to 40 ns (25 MHz)
 CLOCK_PERIOD = 40

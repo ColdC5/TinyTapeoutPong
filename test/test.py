@@ -74,6 +74,9 @@ def pygame_thread(images_queue: queue.Queue, stop_event: threading.Event) -> Non
 
 @cocotb.test()
 async def test_project(dut: DUT) -> None:
+    if not IS_HUMAN_TEST:
+        return
+
     pygame.init()
     if DEBUG:
         debugpy.listen(("0.0.0.0", 5678))
